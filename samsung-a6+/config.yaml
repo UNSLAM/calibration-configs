@@ -1,0 +1,71 @@
+# Samsung A6+ at 720p
+
+#==============#
+# Camera Model #
+#==============#
+
+Camera:
+  name: "Samsung A6+"
+  setup: "monocular"
+  model: "perspective"
+
+  fx: 1144.713
+  fy: 1146.059
+  cx: 642.514
+  cy: 362.621
+
+  k1: 0.3436278111307721
+  k2: -1.7988274724440483
+  p1: -0.0016690935990004874
+  p2: 0.0011139018968795264 
+  k3: 3.306789795453406
+
+  fps: 30.0
+  cols: 1280
+  rows: 720
+
+  color_order: "RGB"
+
+
+#=====================#
+# Tracking Parameters #
+#=====================#
+
+Preprocessing:
+  max_num_keypoints: 1000
+  ini_max_num_keypoints: 2000
+
+#================#
+# ORB Parameters #
+#================#
+
+Feature:
+  name: "default ORB feature extraction setting"
+  scale_factor: 1.2
+  num_levels: 8
+  ini_fast_threshold: 20
+  min_fast_threshold: 7
+
+#====================#
+# Mapping Parameters #
+#====================#
+
+Mapping:
+  baseline_dist_thr_ratio: 0.02
+  redundant_obs_ratio_thr: 0.9
+
+#===========================#
+# PangolinViewer Parameters #
+#===========================#
+
+PangolinViewer:
+  keyframe_size: 0.06
+  keyframe_line_width: 1
+  graph_line_width: 1
+  point_size: 2
+  camera_size: 0.07
+  camera_line_width: 2
+  viewpoint_x: 0
+  viewpoint_y: -20
+  viewpoint_z: -0.1
+  viewpoint_f: 2800
