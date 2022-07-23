@@ -1,0 +1,71 @@
+# Moto G7 Power at 720p
+
+#==============#
+# Camera Model #
+#==============#
+
+Camera:
+  name: "Moto G7 Power"
+  setup: "monocular"
+  model: "perspective"
+
+  fx: 1004.795
+  fy: 1004.795
+  cx: 639.5
+  cy: 359.5
+
+  k1: 0.154261326899092
+  k2: -0.75558138047225
+  p1: 0
+  p2: 0
+  k3: 1.667591298659104
+
+  fps: 30.0
+  cols: 1280
+  rows: 720
+
+  color_order: "RGB"
+
+
+#=====================#
+# Tracking Parameters #
+#=====================#
+
+Preprocessing:
+  max_num_keypoints: 1000
+  ini_max_num_keypoints: 2000
+
+#================#
+# ORB Parameters #
+#================#
+
+Feature:
+  name: "default ORB feature extraction setting"
+  scale_factor: 1.2
+  num_levels: 8
+  ini_fast_threshold: 20
+  min_fast_threshold: 7
+
+#====================#
+# Mapping Parameters #
+#====================#
+
+Mapping:
+  baseline_dist_thr_ratio: 0.02
+  redundant_obs_ratio_thr: 0.9
+
+#===========================#
+# PangolinViewer Parameters #
+#===========================#
+
+PangolinViewer:
+  keyframe_size: 0.06
+  keyframe_line_width: 1
+  graph_line_width: 1
+  point_size: 2
+  camera_size: 0.07
+  camera_line_width: 2
+  viewpoint_x: 0
+  viewpoint_y: -20
+  viewpoint_z: -0.1
+  viewpoint_f: 2800

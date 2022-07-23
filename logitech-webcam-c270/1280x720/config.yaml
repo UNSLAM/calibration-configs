@@ -9,22 +9,22 @@ Camera:
   setup: "monocular"
   model: "perspective"
 
-  fx: 1464.884
-  fy: 1500.955
-  cx: 633.505
-  cy: 574.594
+  fx: 1416.73
+  fy: 1416.73
+  cx: 639.5
+  cy: 359.5
 
-  k1: 0.506413229040713
-  k2: -6.96592207415 
-  p1: 0.06578896997408198
-  p2: -0.0013717617780934683
-  k3: 38.50233523888028
+  k1: -0.00431041
+  k2: 0.8741680
+  p1: 0
+  p2: 0
+  k3: -1.57025008
 
-  fps: 16.0
+  fps: 20.0
   cols: 1280
   rows: 720
 
-  color_order: "RGB"
+  color_order: "Gray"
 
 
 #=====================#
@@ -32,8 +32,7 @@ Camera:
 #=====================#
 
 Preprocessing:
-  max_num_keypoints: 1000
-  ini_max_num_keypoints: 2000
+  min_size: 2000
 
 #================#
 # ORB Parameters #
@@ -41,10 +40,10 @@ Preprocessing:
 
 Feature:
   name: "default ORB feature extraction setting"
-  scale_factor: 1.2
-  num_levels: 8
-  ini_fast_threshold: 20
-  min_fast_threshold: 7
+  # scale_factor: 1.2
+  # num_levels: 8
+  # ini_fast_threshold: 20
+  # min_fast_threshold: 7
 
 #====================#
 # Mapping Parameters #
@@ -53,7 +52,6 @@ Feature:
 Mapping:
   baseline_dist_thr_ratio: 0.02
   redundant_obs_ratio_thr: 0.9
-
 
 #===========================#
 # PangolinViewer Parameters #
