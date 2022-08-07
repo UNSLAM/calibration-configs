@@ -26,13 +26,12 @@ Camera:
 
   color_order: "Gray"
 
-
 #=====================#
 # Tracking Parameters #
 #=====================#
 
 Preprocessing:
-  min_size: 2000
+  min_size: 800
 
 #================#
 # ORB Parameters #
@@ -40,10 +39,10 @@ Preprocessing:
 
 Feature:
   name: "default ORB feature extraction setting"
-  # scale_factor: 1.2
-  # num_levels: 8
-  # ini_fast_threshold: 20
-  # min_fast_threshold: 7
+  scale_factor: 1.2
+  num_levels: 8
+  ini_fast_threshold: 20
+  min_fast_threshold: 7
 
 #====================#
 # Mapping Parameters #
@@ -52,6 +51,8 @@ Feature:
 Mapping:
   baseline_dist_thr_ratio: 0.02
   redundant_obs_ratio_thr: 0.9
+  num_covisibilities_for_landmark_generation: 20
+  num_covisibilities_for_landmark_fusion: 20
 
 #===========================#
 # PangolinViewer Parameters #
@@ -68,3 +69,12 @@ PangolinViewer:
   viewpoint_y: -20
   viewpoint_z: -0.1
   viewpoint_f: 2800
+
+#=========================#
+# LoopDetector Parameters #
+#=========================#
+
+LoopDetector:
+  enabled: true
+  reject_by_graph_distance: true
+  min_distance_on_graph: 50
